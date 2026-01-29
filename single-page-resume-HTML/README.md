@@ -22,6 +22,12 @@ That’s it.
 
 ---
 
+## Live Demo
+
+[View Live Website](https://amirana.github.io/web-dev-cohort-2026/single-page-resume-HTML/)
+
+---
+
 ## Screenshot
 
 ![Resume Screenshot](resume.png)
