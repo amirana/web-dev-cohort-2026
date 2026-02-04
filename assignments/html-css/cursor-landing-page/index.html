@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursor: The best way to code with AI</title>
+    <link rel="icon" href="imgs/favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -45,7 +46,19 @@
                     <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Enterprise</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                    <li><a href="#" class="nav-link">Resources</a></li>
+                    <li class="sub-menu-block">
+                        <a href="#" class="nav-link">Resources</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Changelog</a></li>
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Blog</a></li>
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Docs <span class="hover-icon"> ↗</span></a></li>
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Community</a></li>
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Learn <span class="hover-icon"> ↗</span></a></li>
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Workshops</a></li>
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Forum <span class="hover-icon"> ↗</span></a></li>
+                            <li class="sub-menu-item"><a href="#" class="sub-menu-link">Careers</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav-btns">
                     <li class="nav-item"><a href="#" class="btn-outline">Sign in</a></li>
@@ -76,7 +89,7 @@
         <!----- Trusted By Section ------>
         <section class="trusted-by-section">
             <div class="container">
-                <h2>Trusted every day by millions of professional developers.</h2>
+                <h2 class="text-sm">Trusted every day by millions of professional developers.</h2>
                 <ul class="company-logos-grid">
                     <li><img src="imgs/trusted-by-logos/stripe.svg" alt="Stripe Logo" class="company-logo"></li>
                     <li><img src="imgs/trusted-by-logos/openai.svg" alt="Open AI Logo" class="company-logo"></li>
@@ -92,36 +105,36 @@
         </section>
 
         <!----- Features Section ------>
-        <section class="section">
+        <section class="section features-section">
             <div class="container">
-                <a>
-                    <div>
+                <a href="#" class="feature-card">
+                    <div class="card-content">
                         <h3>Agent turns ideas into code</h3>
-                        <p>A human-AI programmer, orders of magnitude more effective than any developer alone.</p>
-                        <p>Learn about Agent<span> →</span></p>
+                        <p class="content">A human-AI programmer, orders of magnitude more effective than any developer alone.</p>
+                        <p class="btn-red">Learn about Agent<span> →</span></p>
                     </div>
                     <figure>
-                        <img src="imgs/feature-1.png" alt="Cursor Prompt Feature Image">
+                        <img src="imgs/feature-1.png" alt="Cursor Prompt Feature Image" class="card-img">
                     </figure>
                 </a>
-                <a>
+                <a href="#" class="feature-card">
                     <figure>
-                        <img src="imgs/feature-2.png" alt="Cursor Code Tab Image">
+                        <img src="imgs/feature-2.png" alt="Cursor Code Tab Image" class="card-img">
                     </figure>
-                    <div>
+                    <div class="card-content">
                         <h3>Magically accurate autocomplete</h3>
-                        <p>Our custom Tab model predicts your next action with striking speed and precision.</p>
-                        <p>Learn about Tab<span> →</span></p>
+                        <p class="content">Our custom Tab model predicts your next action with striking speed and precision.</p>
+                        <p class="btn-red">Learn about Tab<span> →</span></p>
                     </div>
                 </a>
-                <a>
-                    <div>
+                <a href="#" class="feature-card">
+                    <div class="card-content">
                         <h3>Everywhere software gets built</h3>
-                        <p>Cursor is in GitHub reviewing your PRs, a teammate in Slack, and anywhere else you work.</p>
-                        <p>Learn about Cursor's ecosystem<span> →</span></p>
+                        <p class="content">Cursor is in GitHub reviewing your PRs, a teammate in Slack, and anywhere else you work.</p>
+                        <p class="btn-red">Learn about Cursor's ecosystem<span> →</span></p>
                     </div>
                     <figure>
-                        <img src="imgs/feature-1.png" alt="Cursor Ecosystem Image">
+                        <img src="imgs/feature-1.png" alt="Cursor Ecosystem Image" class="card-img">
                     </figure>
                 </a>
             </div>
@@ -129,133 +142,108 @@
         </section>
 
         <!----- Testimonial Section ------>
-        <section>
+        <section class="section testimonial-section">
             <div class="container">
                 <h2>The new way to build software.</h2>
-                <div>
-                    <div>
-                        <figure>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <figure class="testimonial-flex-col">
                             <blockquote>
-                                <p>
-                                    It was night and day from one batch to another, adoption went from single digits to
-                                    over
-                                    80%. It just spread like wildfire, all the best builders were using Cursor.
-                                </p>
+                                <p class="text-base">It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.</p>
                             </blockquote>
-                            <div>
-                                <div>
-                                    <img src="imgs/testimonials/diana-hu-avatar.webp" alt="Diana Hu Avatar">
+                            <div class="testimonial-user-info">
+                                <div class="testimonial-user">
+                                    <img src="imgs/testimonials/diana-hu-avatar.webp" alt="Diana Hu Avatar" class="testimonial-avatar">
                                     <div>
-                                        <h4>Diana Hu</h4>
-                                        <p>General Partner, Y Combinator</p>
+                                        <h4 class="text-sm">Diana Hu</h4>
+                                        <p class="text-sm">General Partner, Y Combinator</p>
                                     </div>
                                 </div>
                             </div>
                         </figure>
                     </div>
-                    <div>
-                        <figure>
+                    <div class="testimonial-card">
+                        <figure class="testimonial-flex-col">
                             <blockquote>
-                                <p>
-                                    The most useful AI tool that I currently pay for, hands down, is Cursor. It's fast,
-                                    autocompletes when and where you need it to, handles brackets properly, sensible
-                                    keyboard
-                                    shortcuts, bring-your-own-model... everything is well put together.
-                                </p>
+                                <p class="text-base">The most useful AI tool that I currently pay for, hands down, is Cursor. It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard shortcuts, bring-your-own-model... everything is well put together.</p>
                             </blockquote>
-                            <div>
-                                <div>
-                                    <img src="imgs/testimonials/shadcn-avatar.webp" alt="shadcn Avatar">
+                            <div class="testimonial-user-info">
+                                <div class="testimonial-user">
+                                    <img src="imgs/testimonials/shadcn-avatar.webp" alt="shadcn Avatar" class="testimonial-avatar">
                                     <div>
-                                        <h4>shadcn</h4>
-                                        <p>Creator of shadcn/ui</p>
+                                        <h4 class="text-sm">shadcn</h4>
+                                        <p class="text-sm">Creator of shadcn/ui</p>
                                     </div>
                                 </div>
                             </div>
                         </figure>
                     </div>
-                    <div>
-                        <figure>
+                    <div class="testimonial-card">
+                        <figure class="testimonial-flex-col">
                             <blockquote>
-                                <p>
-                                    The best LLM applications have an autonomy slider: you control how much independence
-                                    to
-                                    give
-                                    the AI. In Cursor, you can do Tab completion, Cmd+K for targeted edits, or you can
-                                    let
-                                    it
-                                    rip with the full autonomy agentic version.
-                                </p>
+                                <p class="text-base">The best LLM applications have an autonomy slider: you control how much independence to give the AI. In Cursor, you can do Tab completion, Cmd+K for targeted edits, or you can let it rip with the full autonomy agentic version. </p>
                             </blockquote>
-                            <div>
-                                <div>
+                            <div class="testimonial-user-info">
+                                <div class="testimonial-user">
                                     <img src="imgs/testimonials/andrej-karpathy-avatar.webp"
-                                        alt="Andrej Karpathy Avatar">
+                                        alt="Andrej Karpathy Avatar" class="testimonial-avatar">
                                     <div>
-                                        <h4>Andrej Karpathy</h4>
-                                        <p>CEO, Eureka Labs</p>
+                                        <h4 class="text-sm">Andrej Karpathy</h4>
+                                        <p class="text-sm">CEO, Eureka Labs</p>
                                     </div>
                                 </div>
                             </div>
                         </figure>
                     </div>
-                    <div>
-                        <figure>
+                    <div class="testimonial-card">
+                        <figure class="testimonial-flex-col">
                             <blockquote>
-                                <p>
-                                    Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe
-                                    employees.
-                                    We spend more on R&D and software creation than any other undertaking, and there's
-                                    significant economic outcomes when making that process more efficient and
-                                    productive.
-                                </p>
+                                <p class="text-base">Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe employees. We spend more on R&D and software creation than any other undertaking, and there's significant economic outcomes when making that process more efficient and productive. </p>
                             </blockquote>
-                            <div>
-                                <div>
+                            <div class="testimonial-user-info">
+                                <div class="testimonial-user">
                                     <img src="imgs/testimonials/patrick-collison-avatar.webp"
-                                        alt="Patrick Collison Avatar">
+                                        alt="Patrick Collison Avatar" class="testimonial-avatar">
                                     <div>
-                                        <h4>Patrick Collison</h4>
-                                        <p>Co‑Founder & CEO, Stripe</p>
+                                        <h4 class="text-sm">Patrick Collison</h4>
+                                        <p class="text-sm">Co‑Founder & CEO, Stripe</p>
                                     </div>
                                 </div>
                             </div>
                         </figure>
                     </div>
-                    <div>
-                        <figure>
+                    <div class="testimonial-card">
+                        <figure class="testimonial-flex-col">
                             <blockquote>
-                                <p>It's official. I hate vibe coding. I love Cursor tab coding. It's wild.</p>
+                                <p>It's official. 
+
+I hate vibe coding. 
+I love Cursor tab coding. 
+
+It's wild.</p>
                             </blockquote>
-                            <div>
-                                <div>
-                                    <img src="imgs/testimonials/theprimeagen-avatar.webp" alt="ThePrimeagen Avatar">
+                            <div class="testimonial-user-info">
+                                <div class="testimonial-user">
+                                    <img src="imgs/testimonials/theprimeagen-avatar.webp" alt="ThePrimeagen Avatar" class="testimonial-avatar">
                                     <div>
-                                        <h4>ThePrimeagen</h4>
-                                        <p>@ThePrimeagen</p>
+                                        <h4 class="text-sm">ThePrimeagen</h4>
+                                        <p class="text-sm">@ThePrimeagen</p>
                                     </div>
                                 </div>
                             </div>
                         </figure>
                     </div>
-                    <div>
-                        <figure>
+                    <div class="testimonial-card">
+                        <figure class="testimonial-flex-col">
                             <blockquote>
-                                <p>
-                                    It's definitely becoming more fun to be a programmer. It's less about digging
-                                    through
-                                    pages
-                                    and more about what you want to happen. We are at the 1% of what's possible, and
-                                    it's in
-                                    interactive experiences like Cursor where models like GPT-5 shine brightest.
-                                </p>
+                                <p>It's definitely becoming more fun to be a programmer. It's less about digging through pages and more about what you want to happen. We are at the 1% of what's possible, and it's in interactive experiences like Cursor where models like GPT-5 shine brightest.</p>
                             </blockquote>
-                            <div>
-                                <div>
-                                    <img src="imgs/testimonials/greg-brockman-avatar.webp" alt="Greg Brockman Avatar">
+                            <div class="testimonial-user-info">
+                                <div class="testimonial-user">
+                                    <img src="imgs/testimonials/greg-brockman-avatar.webp" alt="Greg Brockman Avatar" class="testimonial-avatar">
                                     <div>
-                                        <p>Greg Brockman</p>
-                                        <p>President, OpenAI</p>
+                                        <h4 class="text-sm">Greg Brockman</h4>
+                                        <p class="text-sm">President, OpenAI</p>
                                     </div>
                                 </div>
                             </div>
@@ -266,34 +254,34 @@
         </section>
 
         <!----- Use Cases Section ------>
-        <section>
+        <section class="section usecases-section">
             <div class="container">
                 <div>
                     <h2>Stay on the frontier</h2>
-                    <div>
-                        <a href="#">
-                            <h3>Access the best models</h3>
-                            <p>Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, and xAI.</p>
-                            <p>Explore models <span>↗</span></p>
+                    <div class="usecases-grid">
+                        <a href="#" class="usecases-card">
+                            <h3 class="text-base">Access the best models</h3>
+                            <p class="usecase-content">Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, and xAI.</p>
+                            <p class="btn-red">Explore models <span>↗</span></p>
                             <figure>
                                 <img src="imgs/use-case-1.png" alt="Different Cursor Model">
                             </figure>
                         </a>
-                        <a href="#">
-                            <h3>Complete codebase understanding</h3>
-                            <p>Cursor learns how your codebase works, no matter the scale or complexity.</p>
-                            <p>Learn about semantic search <span>↗</span></p>
+                        <a href="#" class="usecases-card">
+                            <h3 class="text-base">Complete codebase understanding</h3>
+                            <p class="usecase-content">Cursor learns how your codebase works, no matter the scale or complexity.</p>
+                            <p class="btn-red">Learn about semantic search <span>↗</span></p>
                             <figure>
                                 <img src="imgs/use-case-2.png" alt="Codebase Understanding">
                             </figure>
                         </a>
-                        <a href="#">
-                            <h3>Develop enduring software</h3>
-                            <p>Trusted by over half of the Fortune 500 to accelerate development, securely and at scale.
+                        <a href="#" class="usecases-card">
+                            <h3 class="text-base">Develop enduring software</h3>
+                            <p class="usecase-content">Trusted by over half of the Fortune 500 to accelerate development, securely and at scale.
                             </p>
-                            <p>Explore enterprise <span>↗</span></p>
+                            <p class="btn-red">Explore enterprise <span>↗</span></p>
                             <figure>
-                                <img src="imgs/use-case-2.png" alt="Codebase Understanding">
+                                <img src="imgs/use-case-3.png" alt="Codebase Understanding">
                             </figure>
                         </a>
                     </div>
@@ -301,194 +289,199 @@
             </div>
         </section>
 
-        <!----- Use Cases Section ------>
-        <section>
+        <!----- Changelog Section ------>
+        <section class="section changelog-section">
             <div class="container">
-                <div>
-                    <h2>Changelog</h2>
-                    <div>
-                        <article>
-                            <a href="#">
-                                <div>
-                                    <span>2.4</span>
-                                    <time datetime="2026-01-22">Jan 22, 2026</time>
-                                </div>
-                                <p>Subagents, Skills, and Image Generation</p>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="#">
-                                <div>
-                                    <time datetime="2026-01-16">Jan 16, 2026</time>
-                                </div>
-                                <p>CLI Agent Modes and Cloud Handoff</p>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="#">
-                                <div>
-                                    <time datetime="2026-01-08">Jan 8, 2026</time>
-                                </div>
-                                <p>New CLI Features and Improved CLI Performance</p>
-                            </a>
-                        </article>
-                        <article>
-                            <a href="#">
-                                <div>
-                                    <span>2.3</span>
-                                    <time datetime="2025-12-22">Dec 22, 2025</time>
-                                </div>
-                                <p>Layout Customization and Stability Improvements</p>
-                            </a>
-                        </article>
-                    </div>
-                    <a href="#">See what's new in Cursor <span>→</span></a>
+                <h2>Changelog</h2>
+                <div class="changelog-grid">
+                    <article class="changelog-card">
+                        <a href="#">
+                            <div class="changelog-datetime">
+                                <span class="label text-sm">2.4</span>
+                                <time datetime="2026-01-22" class="time text-base">Jan 22, 2026</time>
+                            </div>
+                            <p class="changelog-title text-base">Subagents, Skills, and Image Generation</p>
+                        </a>
+                    </article>
+                    <article class="changelog-card">
+                        <a href="#">
+                            <div class="changelog-datetime">
+                                <time datetime="2026-01-16" class="time text-base">Jan 16, 2026</time>
+                            </div>
+                            <p class="changelog-title text-base">CLI Agent Modes and Cloud Handoff</p>
+                        </a>
+                    </article>
+                    <article class="changelog-card">
+                        <a href="#">
+                            <div class="changelog-datetime">
+                                <time datetime="2026-01-08" class="time text-base">Jan 8, 2026</time>
+                            </div>
+                            <p class="changelog-title text-base">New CLI Features and Improved CLI Performance</p>
+                        </a>
+                    </article>
+                    <article class="changelog-card">
+                        <a href="#">
+                            <div class="changelog-datetime">
+                                <span class="label text-sm">2.3</span>
+                                <time datetime="2025-12-22" class="time text-base">Dec 22, 2025</time>
+                            </div>
+                            <p class="changelog-title text-base">Layout Customization and Stability Improvements</p>
+                        </a>
+                    </article>
                 </div>
+                <a href="#" class="btn-red">See what's new in Cursor <span>→</span></a>
             </div>
         </section>
 
         <!----- Team Section ------>
-        <section>
+        <section class="section team-section">
             <div class="container">
-                <div>
+                <div class="team-content">
                     <h2>Cursor is an applied team focused on building the future of coding.</h2>
-                    <a href="#">Join us <span>→</span></a>
-                    <figure>
-                        <img src="imgs/homepage-team-photo.webp" alt="Team">
-                    </figure>
+                    <a href="#" class="btn-white-with-icon">Join us <span>→</span></a>
                 </div>
+                <figure>
+                        <img src="imgs/homepage-team-photo.webp" alt="Team">
+                </figure>
             </div>
         </section>
 
         <!----- Recent Highlights Section ------>
-        <section>
+        <section class="section highlight-section">
             <div class="container">
-                <div>
-                    <h2>Recent highlights</h2>
-                    <div>
-                        <article>
+                <div class="highlight-grid">
+                    <div class="highlight-title">
+                        <h2 class="sticky-title text-base">Recent highlights</h2>
+                    </div>
+                    <div class="highlight-articles">
+                        <article class="article">
                             <a href="#">
-                                <h3>Introducing Cursor 2.0 and Composer</h3>
-                                <p>A new interface and our first coding model, both purpose-built for working with
-                                    agents.
+                                <h3 class="article-title text-base">Introducing Cursor 2.0 and Composer</h3>
+                                <p class="article-content text-base">A new interface and our first coding model, both purpose-built for working with agents.
                                 </p>
-                                <p>
+                                <p class="article-data text-base">
                                     <span>Product</span>
                                     <span>·</span>
                                     <time datetime="2025-10-29">Oct 29, 2025</time>
                                 </p>
                             </a>
                         </article>
-                        <article>
+                        <article class="article">
                             <a href="#">
-                                <h3>Improving Cursor Tab with online RL</h3>
-                                <p>Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate.
+                                <h3 class="article-title text-base">Improving Cursor Tab with online RL</h3>
+                                <p class="article-content text-base">Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate.
                                 </p>
-                                <p>
+                                <p class="article-data text-base">
                                     <span>Research</span>
                                     <span>·</span>
                                     <time datetime="2025-09-12">Sep 12, 2025</time>
                                 </p>
                             </a>
                         </article>
-                        <article>
+                        <article class="article">
                             <a href="#">
-                                <h3>1.5x faster MoE training with custom MXFP8 kernels</h3>
-                                <p>Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs.</p>
-                                <p>
+                                <h3 class="article-title text-base">1.5x faster MoE training with custom MXFP8 kernels</h3>
+                                <p class="article-content text-base">Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs.</p>
+                                <p class="article-data text-base">
                                     <span>Research</span>
                                     <span>·</span>
                                     <time datetime="2025-08-29">Aug 29, 2025</time>
                                 </p>
                             </a>
                         </article>
+                        <a href="#" class="btn-red">View more posts <span> →</span></a>
                     </div>
-                    <a href="#">View more posts <span> →</span></a>
                 </div>
             </div>
         </section>
 
-        <!----- Recent Highlights Section ------>
-        <section>
+        <!----- Try Now Section ------>
+        <section class="section try-now-section">
             <div class="container">
                 <div>
                     <h2>Try Cursor now.</h2>
-                    <a href="#">Download for macOS <span>⤓</span></a>
+                    <a href="#" class="btn-white-with-icon">Download for macOS <span>⤓</span></a>
                 </div>
             </div>
         </section>
     </main>
 
     <!----- Footer Section ------>
-    <footer>
-        <div>
-            <div>
-                <h2>Product</h2>
-                <ul>
-                    <li><a href="#">Features <span> ↗</span></a></li>
-                    <li><a href="#">Enterprise <span> ↗</span></a></li>
-                    <li><a href="#">Web Agents <span> ↗</span></a></li>
-                    <li><a href="#">Bugbot <span> ↗</span></a></li>
-                    <li><a href="#">CLI <span> ↗</span></a></li>
-                    <li><a href="#">Pricing <span> ↗</span></a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Resources</h2>
-                <ul>
-                    <li><a href="#">Download <span> ↗</span></a></li>
-                    <li><a href="#">Changelog <span> ↗</span></a></li>
-                    <li><a href="#">Docs <span> ↗</span></a></li>
-                    <li><a href="#">Learn <span> ↗</span></a></li>
-                    <li><a href="#">Forum <span> ↗</span></a></li>
-                    <li><a href="#">Status <span> ↗</span></a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Company</h2>
-                <ul>
-                    <li><a href="#">Careers <span> ↗</span></a></li>
-                    <li><a href="#">Blog <span> ↗</span></a></li>
-                    <li><a href="#">Community <span> ↗</span></a></li>
-                    <li><a href="#">Workshops <span> ↗</span></a></li>
-                    <li><a href="#">Students <span> ↗</span></a></li>
-                    <li><a href="#">Brand <span> ↗</span></a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Legal</h2>
-                <ul>
-                    <li><a href="#">Terms of Service <span> ↗</span></a></li>
-                    <li><a href="#">Privacy Policy <span> ↗</span></a></li>
-                    <li><a href="#">Data Use <span> ↗</span></a></li>
-                    <li><a href="#">Security <span> ↗</span></a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Connect</h2>
-                <ul>
-                    <li><a href="#">X <span> ↗</span></a></li>
-                    <li><a href="#">LinkedIn <span> ↗</span></a></li>
-                    <li><a href="#">YouTube <span> ↗</span></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <small>© 2026 Cursor</small>
-                <small>🛡 SOC 2 Certified</small>
-            </div>
-            <div>
+    <footer class="">
+        <div class="container">
+            <nav class="footer-navbar">
                 <div>
-                    <ul>
-                        <li><button>🖥</button></li>
-                        <li><button>☉</button></li>
-                        <li><button>☾</button></li>
+                    <h3 class="text-sm">Product</h3>
+                    <ul class="footer-nav-menu">
+                        <li><a href="#" class="footer-nav-link text-sm">Features</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Enterprise</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Web Agents</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Bugbot</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">CLI</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Pricing</a></li>
                     </ul>
                 </div>
                 <div>
-                    <button>🌐 English <span>↓</span></button>
+                    <h3 class="text-sm">Resources</h3>
+                    <ul class="footer-nav-menu">
+                        <li><a href="#" class="footer-nav-link text-sm">Download</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Changelog</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Docs <span class="hover-icon"> ↗</span></a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Learn <span class="hover-icon"> ↗</span></a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Forum <span class="hover-icon"> ↗</span></a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Status <span class="hover-icon"> ↗</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm">Company</h3>
+                    <ul class="footer-nav-menu">
+                        <li><a href="#" class="footer-nav-link text-sm">Careers</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Blog</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Community</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Workshops</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Students</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Brand</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm">Legal</h3>
+                    <ul class="footer-nav-menu">
+                        <li><a href="#" class="footer-nav-link text-sm">Terms of Service</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Data Use</a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm">Connect</h3>
+                    <ul class="footer-nav-menu">
+                        <li><a href="#" class="footer-nav-link text-sm">X <span class="hover-icon"> ↗</span></a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">LinkedIn <span class="hover-icon"> ↗</span></a></li>
+                        <li><a href="#" class="footer-nav-link text-sm">YouTube <span class="hover-icon"> ↗</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="copyright">
+                <div>
+                    <small class="text-sm">© 2026 Cursor</small>
+                    <small class="text-sm">🛡 SOC 2 Certified</small>
+                </div>
+                <div class="lang-bar">
+                    <div>
+                        <ul class="dark-mode">
+                            <li><button class="text-sm">🖥</button></li>
+                            <li><button class="text-sm">☉</button></li>
+                            <li class="active"><button class="text-sm">☾</button></li>
+                        </ul>
+                    </div>
+                    <div class="lang">
+                        <button class="btn-lang text-sm">
+                            <span>🌐</span>English 
+                            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#edecec"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
