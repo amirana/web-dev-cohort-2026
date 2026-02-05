@@ -1,16 +1,6 @@
 @font-face {
     font-family: "CursorGothic";
-    src: url(../fonts/CursorGothic_Regular.woff2) format(woff2);
-}
-
-@font-face {
-    font-family: "CursorGothic Bold";
-    src: url(../fonts/CursorGothic_Bold.woff2) format(woff2);
-}
-
-@font-face {
-    font-family: "CursorGothic Italic";
-    src: url(../fonts/CursorGothic_Italicwoff2) format(woff2);
+    src: url(../font/CursorGothic_Regular.woff2) format(woff2);
 }
 
 :root{
@@ -124,9 +114,10 @@ header{
     padding-inline: calc(calc(10rem/16)*1.5);
     padding-block: calc(1rem*1.4*3/12);
     border: 1px solid #0000;
+    cursor: pointer;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-item:hover .nav-link{
     color: rgba(237, 236, 236, 0.75);
 }
 
@@ -169,6 +160,24 @@ header{
 
 .navbar .sub-menu .sub-menu-link{
     min-width: 8rem;
+}
+
+.navbar .sub-menu.no-grid{
+    grid-template-columns: repeat(1, auto);
+}
+
+.text-sm{
+    font-size: var(--text-sm);
+    line-height: var(--leading-normal);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0.01rem;
+}
+
+.text-base{
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0.005rem;
 }
 
 .btn-outline{
@@ -226,20 +235,6 @@ header{
 
 .btn-red:hover{
     color: color-mix(in oklab,var(--theme-accent)75%,transparent)
-}
-
-.text-sm{
-    font-size: var(--text-sm);
-    line-height: var(--leading-normal);
-    font-weight: var(--font-weight-regular);
-    letter-spacing: 0.01rem;
-}
-
-.text-base{
-    font-size: var(--text-base);
-    line-height: var(--leading-normal);
-    font-weight: var(--font-weight-regular);
-    letter-spacing: 0.005rem;
 }
 
 main{
@@ -593,8 +588,8 @@ footer{
     transition: 0.15s cubic-bezier(.4,0,.2,1) opacity;
 }
 
-.footer-nav-menu .footer-nav-link:hover .hover-icon, 
-.navbar .sub-menu .sub-menu-link:hover .hover-icon{
+.footer-nav-menu .nav-item:hover .hover-icon, 
+.navbar .sub-menu .sub-menu-item:hover .hover-icon{
     opacity: 1;
 }
 
@@ -634,6 +629,7 @@ footer{
     font-family: var(--font-cursor-gothic);
     color: var(--theme-white-sec);
     cursor: pointer;
+    line-height: 1;
 }
 
 .dark-mode .active button{
