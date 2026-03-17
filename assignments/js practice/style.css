@@ -1,0 +1,45 @@
+:root {
+    --light: #FFF4E6;
+    --dark: #160c05;
+    --button-bg: #E8956F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--light);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+.dark-mode {
+    background-color: var(--dark);
+    color: var(--light);
+}
