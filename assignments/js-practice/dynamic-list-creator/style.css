@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-geist: "Work Sans", sans-serif;
+    --color-white: #fff;
+    --color-off-white: #f5f5f7;
+    --color-black: #1d1d1f;
+    --color-blue: #0071e3;
+    --color-gray: #d2d2d7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-off-white);
+    font-family: var(--font-geist);
+    font-weight: 400;
+    padding: 80px 30px;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+section {
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.dynamic-list-block {
+    background: var(--color-white);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.25s ease;
+}
+
+.dynamic-list-block:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.dynamic-list-block input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--color-gray);
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    transition: all 0.25s ease;
+    font-family: inherit;
+    color: var(--color-black);
+    background: var(--color-off-white);
+}
+
+.dynamic-list-block input::placeholder {
+    color: #86868b;
+}
+
+.dynamic-list-block input:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    background: var(--color-white);
+    box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.1);
+}
+
+.dynamic-list-block .input-btn {
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-bottom: 50px;
+    box-shadow: none;
+    font-family: var(--font-geist);
+}
+
+.dynamic-list-block button:hover {
+    background: #0077f4;
+}
+
+.dynamic-list-block button:active {
+    background: #0066d0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dynamic-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+    gap: 12px;
+    font-weight: 500;
+    background: var(--color-white);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-bottom: none;
+}
+
+.dynamic-list li:last-child {
+    border-bottom: none;
+}
+
+.dynamic-list li:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    background: var(--color-white);
+}
+
+/* Minimal color styling */
+.dynamic-list li{
+    background: transparent;
+    color: var(--color-black)
+}
+
+.dynamic-list span {
+    flex: 1;
+    font-size: 1rem;
+    word-break: break-word;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--color-black)
+}
+
+.dynamic-list li input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-black);
+    background: var(--color-off-white);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.dynamic-list li input:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    background: var(--color-white);
+}
+
+.dynamic-list li button {
+    font-family: var(--font-geist);
+    padding: 8px 14px;
+    width: auto;
+    min-width: 70px;
+    background: transparent;
+    color: var(--color-blue);
+    border: 1px solid var(--color-gray);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin: 0;
+    box-shadow: none;
+}
+
+.dynamic-list li button:hover {
+    background: var(--color-off-white);
+    border-color: var(--color-gray);
+}
+
+.dynamic-list li button:active {
+    background: #ececf1;
+}
+
+.dynamic-list:empty::after {
+    content: 'No items yet. Add one to get started!';
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #a1a1a6;
+    font-style: italic;
+    font-weight: 400;
+}
