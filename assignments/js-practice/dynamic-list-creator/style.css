@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --font-geist: "Work Sans", sans-serif;
+    --font-worksans: "Work Sans", sans-serif;
     --color-white: #fff;
     --color-off-white: #f5f5f7;
     --color-black: #1d1d1f;
@@ -17,7 +17,7 @@
 
 body {
     background: var(--color-off-white);
-    font-family: var(--font-geist);
+    font-family: var(--font-worksans);
     font-weight: 400;
     padding: 80px 30px;
     min-height: 100vh;

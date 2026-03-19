@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Color Palette Generator</h1>
+
+            <div class="palette-generator-wrapper">
+                <div class="controls">
+                    <div class="selection">
+                        <select name="color-format" id="format">
+                            <option value="hex">HEX</option>
+                            <option value="rgb">RGB</option>
+                        </select>
+
+                        <select name="color-theme" id="theme">
+                            <option value="all">All Colors</option>
+                            <option value="dark">Dark</option>
+                            <option value="light">Light</option>
+                        </select>
+                    </div>
+            
+                    <button id="generate-btn" class="generate-btn">Generate Palette</button>
+                </div>
+
+                <div id="palette" class="palette-generator"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
