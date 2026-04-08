@@ -30,7 +30,7 @@ Patients can visit multiple times, doctors can handle many patients, and consult
 
 Focused on the core flow:
 
-**Patient → Appointment → Consultation → Prescription → Diagnosis → Payment**
+Patient → Appointment → Consultation → Prescription → Diagnosis → Payment
 
 ### Entities:
 
@@ -46,7 +46,7 @@ Focused on the core flow:
 
 ---
 
-## 🔗 Key Relationships
+## Key Relationships
 
 * A doctor belongs to a speciality
 * A patient can book multiple appointments
@@ -63,20 +63,10 @@ Focused on the core flow:
 
 ---
 
-## Final Thoughts
-
-Tried to balance:
-
-* real-world use cases
-* simplicity
-* and scalability
-
 Not perfect, but a solid starting point.
 
-Would love feedback — especially on:
+Would love feedback, especially on:
 
 * relationships
 * missing edge cases
 * or overengineering
-
----
