@@ -33,7 +33,8 @@ The system needs to support:
 
 ## What I Modeled
 
-Builidngs → Zones → Shafts → Elevators → Floor Request → Ride Assignment → Ride Log
+Floor Request → Ride Assignment → Elevator → Ride Log
+
 
 ### Entities:
 
