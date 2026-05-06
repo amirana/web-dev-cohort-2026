@@ -1,122 +1,94 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState, useEffect } from "react";
+import "./app.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [quotes, setQuotes] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [page, setPage] = useState(1);
+  const [visible, setVisible] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [totalPages] = useState(5);
+
+  async function loadQuotes(pageNum) {
+    const url = `https://api.freeapi.app/api/v1/public/quotes?page=${pageNum}&limit=10`;
+    try {
+      const res = await fetch(url, { headers: { accept: "application/json" } });
+      const data = await res.json();
+      setQuotes((prev) => [...prev, ...data.data.data]);
+      setLoading(false);
+      setTimeout(() => setVisible(true), 60);
+    } catch (err) {
+      console.error(err);
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    loadQuotes(page);
+  }, [page]);
+
+  function handleNext() {
+    setVisible(false);
+    setTimeout(() => {
+      const next = currentIndex + 1;
+      if (next >= quotes.length) {
+        if (page < totalPages) setPage((p) => p + 1);
+        setCurrentIndex(next % quotes.length || 0);
+      } else {
+        setCurrentIndex(next);
+      }
+      setVisible(true);
+    }, 300);
+  }
+
+  const quote = quotes[currentIndex];
+  const globalNum = currentIndex + 1;
+  const totalLoaded = quotes.length;
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="app">
+        <div className="top-bar">
+          <span className="wordmark">Quotidian</span>
+          {!loading && (
+            <span className="counter">
+              {globalNum} / {totalLoaded + (page < totalPages ? "+" : "")}
+            </span>
+          )}
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
+
+        <div className="stage">
+          {loading ? (
+            <div className="loading-state">
+              <div className="dot" />
+              <div className="dot" />
+              <div className="dot" />
+            </div>
+          ) : quote ? (
+            <div className={`quote-wrap ${visible ? "visible" : ""}`}>
+              <span className="opening-mark">"</span>
+              <p className="quote-text">{quote.content}</p>
+              <div className="quote-author">
+                <div className="author-line" />
+                <span className="author-name">{quote.author}</span>
+              </div>
+            </div>
+          ) : null}
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        <div className="bottom-bar">
+          <span className="nav-hint">
+            {page < totalPages ? `Page ${page} of ${totalPages}` : "All quotes loaded"}
+          </span>
+          <button
+            className="next-btn"
+            onClick={handleNext}
+            disabled={loading}
+          >
+            Next →
+          </button>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
+    );
+  }
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
-}
-
-export default App
+export default App;
