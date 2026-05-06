@@ -13,7 +13,6 @@ function App() {
   };
 
   useEffect(() => {
-    const controller = new AbortController();
 
     async function loadVideoListing() {
       const url = `https://api.freeapi.app/api/v1/public/youtube/videos?page=${page}&limit=10&query=javascript&sortBy=mostViewed`;
@@ -25,7 +24,6 @@ function App() {
       try {
         const response = await fetch(url, options);
         const data = await response.json();
-        console.log(data);
         setVideos(data.data.data);
         setTotalPages(data.data.totalPages);
       } catch (error) {
