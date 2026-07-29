@@ -11,13 +11,13 @@ function App() {
     async function loadJokes() {
       try {
         const response = await fetch(
-          `https://api.freeapi.app/api/v1/public/randomjokes?limit=1`,
+          `https://api.freeapi.app/api/v1/public/randomjokes?limit=1&page=${page}`,
         );
 
         const data = await response.json();
 
         setJokes(data.data.data);
-        
+        console.log(data.data.data)
       } catch (error) {
         console.log(error)
       }
