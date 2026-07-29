@@ -14,7 +14,6 @@ function App() {
         );
         const data = await response.json();
         setMeals(data.data.data);
-        console.log(data.data);
       } catch (error) {
         console.log(error);
       }
