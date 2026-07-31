@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-panel" aria-labelledby="login-title">
+            <div class="brand" aria-label="Punchline">PUNCHLINE</div>
+            <div class="intro">
+                <p class="eyebrow">WELCOME BACK</p>
+                <h1 id="login-title">Good to see you<span>✦</span></h1>
+                <p class="subtitle">Log in to pick up where the laughs left off.</p>
+            </div>
+            <form id="login-form" class="auth-form">
+                <label for="email" class="field">
+                    <span>Username</span>
+                    <input type="text" name="username" id="username" placeholder="Enter your username">
+                </label>
+
+                <label for="password" class="field">
+                    <span>Password</span>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                </label>
+
+                <button type="submit">Login <span aria-hidden="true">→</span></button>
+            </form>
+            <p class="form-note">Your next favorite joke is waiting for you.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

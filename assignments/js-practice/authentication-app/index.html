@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-panel" aria-labelledby="register-title">
+            <div class="brand" aria-label="Punchline">PUNCHLINE</div>
+            <div class="intro">
+                <p class="eyebrow">MEMBERS ONLY</p>
+                <h1 id="register-title">Join the good stuff<span>✦</span></h1>
+                <p class="subtitle">Create an account to keep the laughs coming.</p>
+            </div>
+            <form id="register-form" class="auth-form">
+                <label for="email" class="field">
+                    <span>Email address</span>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </label>
+
+                <label for="password" class="field">
+                    <span>Password</span>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                </label>
+
+                <label for="username" class="field">
+                    <span>Username</span>
+                    <input type="text" name="username" id="username" placeholder="Enter your username">
+                </label>
+
+                <button type="submit">Create account <span aria-hidden="true">→</span></button>
+            </form>
+            <p class="form-note">No boring forms. Just a few details and you’re in.</p>
+            <p class="account-prompt">Already have an account? <a class="auth-link" href="login.html">Log in →</a></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

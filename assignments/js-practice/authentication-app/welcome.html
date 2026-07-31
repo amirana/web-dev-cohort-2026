@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Punchline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-page welcome-page">
+        <section class="welcome-panel" aria-labelledby="welcome-title">
+            <header class="welcome-header">
+                <div class="brand" aria-label="Punchline">PUNCHLINE</div>
+                <div class="account-actions">
+                    <span class="status-badge">● ONLINE</span>
+                    <button type="button" id="logout" class="logout-button">Logout <span aria-hidden="true">→</span></button>
+                </div>
+            </header>
+
+            <div class="intro welcome-intro">
+                <p class="eyebrow">YOU'RE IN</p>
+                <h1 id="welcome-title"></h1>
+                <p class="subtitle">Here’s a little something to brighten your day.</p>
+            </div>
+
+            <article class="joke-card" aria-labelledby="joke-title">
+                <p class="card-label">JOKE OF THE DAY</p>
+                <h2 id="joke-title">Why don’t scientists trust atoms?</h2>
+                <p class="joke-answer">Because they make up everything.</p>
+                <footer class="joke-footer">
+                    <span>✦ 1,284 people laughed</span>
+                    <span class="joke-category">SCIENCE</span>
+                </footer>
+            </article>
+
+            <section class="quick-stats" aria-label="Your Punchline activity">
+                <article class="stat-card">
+                    <strong>12</strong>
+                    <span>Jokes saved</span>
+                </article>
+                <article class="stat-card stat-card--blue">
+                    <strong>4</strong>
+                    <span>Laugh streak</span>
+                </article>
+                <article class="stat-card stat-card--coral">
+                    <strong>89%</strong>
+                    <span>Humour match</span>
+                </article>
+            </section>
+
+            <p class="form-note">More punchlines are coming soon. Keep smiling.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
